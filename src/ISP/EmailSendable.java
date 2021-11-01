@@ -1,8 +1,7 @@
 package ISP;
 
-public class EmailSendable extends EmailSender{
+public interface EmailSendable {
 
-	public String getEmailAddress() {
-		return null;
-	};
+	String getEmail();
+
 }

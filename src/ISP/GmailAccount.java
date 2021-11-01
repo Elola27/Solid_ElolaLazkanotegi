@@ -1,16 +1,14 @@
 package ISP;
 
-public class GmailAccount extends EmailSendable{
+public class GmailAccount implements EmailSendable {
+	String name, emailAddress;
 
-	String name;
-	String emailAddress;
-	
-	public GmailAccount(String a,String b) {
-		name=a;
-		emailAddress=b;
+	public GmailAccount(String izena, String helbidea) {
+		this.name = izena;
+		this.emailAddress = helbidea;
 	}
-	
-	public String getEmailAddress() {
+
+	public String getEmail() {
 		return emailAddress;
 	}
 }
