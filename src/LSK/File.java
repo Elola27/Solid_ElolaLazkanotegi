@@ -1,6 +1,6 @@
 package LSK;
 
-public class File implements Readable{
+public class File implements Readable,Storable{
 	
 	public String filePath;
 
