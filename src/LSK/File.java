@@ -1,17 +1,19 @@
-package LSP;
+package LSK;
 
-public class ProjectFile {
+public class File implements Readable{
+	
 	public String filePath;
 
-	public ProjectFile(String filePath) {
+	public File(String filePath) {
 		this.filePath = filePath;
 	}
-
-	public void loadFile() {
+	
+	public void read() {
 		System.out.println("file loaded from " + filePath);
 	}
 
-	public void storeFile() {
+	public void store() {
 		System.out.println("file saved to " + filePath);
 	}
+
 }
