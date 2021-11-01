@@ -14,15 +14,18 @@ public class Bill {
 
 // Fakturaren totala kalkulatzen duen metodoa.
 	public void totalCalc() {
-		//calculoTotal a=new calculoTotal();
 		calculoVAT b=new calculoVAT();
 		calculoDeduction c=new calculoDeduction();
 // Dedukzioa kalkulatu
 		billDeduction=c.calcDeduction(billAmount, deductionPercentage);
-		//billDeduction = calcDeduction();
 // VAT kalkulatzen dugu
-		VAT =b.calcVAT(billAmount);
+		VAT =b.calcVAT(billAmount,(float)0.18);
 // Totala kalkulatzen dugu
-		billTotal = (billAmount - billDeduction) + VAT;
+		if (code.compareTo("0")==0) {
+			billTotal = (billAmount - billDeduction) + VAT;
+		}else {
+			billTotal= (billAmount-billDeduction);
+		}
+			
 	}
 }

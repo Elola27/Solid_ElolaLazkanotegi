@@ -6,7 +6,7 @@ public class Circle extends Figure {
 	
 	@Override
 	public float getArea() {
-		return (float)Math.PI*diameter*diameter;
+		return (float)(Math.PI*Math.pow(diameter, 2));
 	}
 
 }

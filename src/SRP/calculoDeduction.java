@@ -10,5 +10,4 @@ public class calculoDeduction {
 			return (billAmount * deductionPercentage) / 100;
 		}
 	}
-
 }
